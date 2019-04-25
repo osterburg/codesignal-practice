@@ -31,6 +31,7 @@ def bishopAndPawn(bishop, pawn):
     #
     # return False
 
+    # Short and Simple
     b = [ord(bishop[0]), int(bishop[1])]
     p = [ord(pawn[0]), int(pawn[1])]
 

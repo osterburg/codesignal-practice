@@ -11,10 +11,14 @@ buildPalindrome(st) = "abcdcba".
 def buildPalindrome(st):
     length = len(st)
     for i in range(length):
-        sub = st[i:length]  # removes first letter from string
+        # removes first letter from string
+        sub = st[i:length]
         if sub == sub[::-1]:
-            part = st[0:i]  # if sub is palindrome move what you removed above into part
-            return st + part[::-1]  # add part to st and return
+            # if sub is palindrome move what you removed above into part
+            part = st[0:i]
+            
+            # add part to st and return
+            return st + part[::-1]
 
     return ""
 
